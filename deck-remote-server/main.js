@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-var WebSocketServer = require('./websocket-server').server;
+// var WebSocketServer = require('./websocket-server').server;
+var WebSocketServer = require('websocket').server;
 var http = require('http');
 
 var server = http.createServer(function(request, response) {
